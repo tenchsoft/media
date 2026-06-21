@@ -82,7 +82,6 @@ cargo run --locked -p view    # or: pixel-design, player, composer
 ## Pricing
 
 - **$1 / month per device** — every Tench Media + Tench Office app.
-- Bulk pricing for 5+ devices.
 
 → https://tenchsoft.com/pricing
 
