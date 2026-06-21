@@ -1,0 +1,10 @@
+[package]
+name = "tench-pixel-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Pixel editing engine: layers, compositing, brushes, and filters"
+
+[dependencies]
+image.workspace = true

@@ -1,0 +1,25 @@
+[package]
+name = "tench-composer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Composer desktop app"
+
+[lib]
+name = "tench_composer_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build.workspace = true
+
+[dependencies]
+tauri.workspace = true
+tauri-plugin-dialog.workspace = true
+tench-composer-core.workspace = true
+tench-media-runtime.workspace = true
+tench-ui = { workspace = true, features = ["tauri"] }
+
+[dev-dependencies]
+tench-ui-test.workspace = true
+tench-ui-automation-core.workspace = true

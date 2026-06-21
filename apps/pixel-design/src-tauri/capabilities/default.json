@@ -1,0 +1,6 @@
+{
+  "identifier": "default",
+  "description": "Default desktop permissions for Pixel Design",
+  "windows": ["main"],
+  "permissions": ["core:default", "dialog:default"]
+}

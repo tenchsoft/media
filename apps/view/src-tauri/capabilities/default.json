@@ -1,0 +1,7 @@
+{
+  "identifier": "default",
+  "description": "Default desktop permissions for View",
+  "windows": ["main"],
+  "permissions": ["core:default", "dialog:default"]
+}
+

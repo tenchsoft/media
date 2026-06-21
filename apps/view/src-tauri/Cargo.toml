@@ -1,0 +1,32 @@
+[package]
+name = "tench-view"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "View desktop app"
+
+[lib]
+name = "tench_view_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build.workspace = true
+
+[dependencies]
+image.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tauri.workspace = true
+tauri-plugin-dialog.workspace = true
+tench-image-core.workspace = true
+tench-storage-core.workspace = true
+tench-image-runtime.workspace = true
+tench-ui = { workspace = true, features = ["tauri"] }
+arboard.workspace = true
+tench-shared-types.workspace = true
+ureq.workspace = true
+
+[dev-dependencies]
+tench-ui-test.workspace = true
+tench-ui-automation-core.workspace = true

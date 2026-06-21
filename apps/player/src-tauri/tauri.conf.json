@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Player",
+  "version": "0.1.0",
+  "identifier": "com.tench.player",
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Player",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 1040,
+        "minHeight": 700,
+        "resizable": true
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "fileAssociations": [
+      {
+        "name": "Video File",
+        "description": "Video media file",
+        "ext": ["mp4", "mkv", "avi", "mov", "wmv", "flv", "webm", "m4v", "mpg", "mpeg", "3gp", "ogv", "ts", "mts", "m2ts", "vob"]
+      },
+      {
+        "name": "Audio File",
+        "description": "Audio media file",
+        "ext": ["mp3", "flac", "wav", "aac", "ogg", "wma", "m4a", "opus", "ape", "alac", "wv", "tta", "aiff"]
+      }
+    ]
+  },
+  "build": {
+    "frontendDist": "./frontend"
+  }
+}

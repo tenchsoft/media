@@ -1,0 +1,17 @@
+[package]
+name = "tench-media-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Shared Tench media app runtime boundaries"
+
+[dependencies]
+gif = "0.13"
+image.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tench-media-core.workspace = true
+tench-shared-types.workspace = true
+tench-storage-core.workspace = true
+tench-subtitle-core.workspace = true
